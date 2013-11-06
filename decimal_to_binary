@@ -1,0 +1,11 @@
+########### Program for the conversion of decimal to binary ##########</pre>
+input_num = input("Enter the number:")
+lst = []
+while input_num > 1:
+    if input_num % 2 == 0:
+        lst.append(0)
+    else:
+        lst.append(1)
+    input_num/=2
+lst.append(1)
+print lst[::-1]
